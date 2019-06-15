@@ -1,6 +1,9 @@
-{% extends 'base.html' %}
+{% extends 'adminlte/base.html' %}
 
-{% block section %}
+{% block title %}My App{% endblock %}
+{% block content %}
+    Just some example content
+    {% block section %}
     <h2>Category</h2>
     <hr>
 {% endblock section %}
@@ -19,3 +22,5 @@
         {% endfor %}
     </div>
 {% endblock maincontent %}
+{% endblock %}
+
